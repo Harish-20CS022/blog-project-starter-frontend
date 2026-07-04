@@ -22,10 +22,11 @@ function Home() {
             <div className='flex items-center justify-center'>
                 <div className="w-full sm:w-1/2 flex-col justify-center">
                     <h2 className='text-3xl md:text-6xl font-bold pb-2'>Hy! I Am</h2>
-                    <h2 className='text-4xl md:text-7xl font-bold text-orange-400 py-2'>Jacky Thomas</h2>
+                    <h2 className='text-4xl md:text-7xl font-bold text-orange-400 py-2'>Hari</h2>
                     <img src={BlogProfileImage} className='w-60 block sm:hidden' alt="Blog Profile Image" />
                     <p className='py-2'>I can create stunning website for your company, Do check my works. I won't disappoint you. Try me for 7 Days before you decide anything.</p>
-                    <button className='button-style mt-2'>Hire Me</button>
+                    <a href="/Hariharan_FSD_Resume.pdf" target="_blank" rel="noopener noreferrer" className='button-style mt-2 inline-block'>Hire Me</a>
+
                 </div>
                 <div className='justify-center hidden sm:block'>
                     <img src={BlogProfileImage} className='w-60 md:w-96 ' alt="Blog Profile Image" />
@@ -61,7 +62,7 @@ function Home() {
                     <h2 className='text-3xl sm:text-7xl font-bold'>My Awesome</h2>
                     <h2 className='text-3xl sm:text-7xl font-bold text-orange-400'>Services</h2>
                     <p className='my-2'>I have attahed my Resume here for your Reference</p>
-                    <button className='button-style mt-2'>Download CV</button>
+                    <a href="/Hariharan_FSD_Resume.pdf" target="_blank" rel="noopener noreferrer" className='button-style mt-2 inline-block'>Download CV</a>
 
                 </div>
 
@@ -74,7 +75,9 @@ function Home() {
                 <h2 className='text-center text-5xl my-14 font-bold'>Checkout My Live <span className='text-orange-400'>Projects</span> Here</h2>
                 <div className='flex justify-around my-5 flex-col sm:flex-row'>
 
-                    <img src={P1} className='w-64 border rounded-md cursor-pointer' alt="" />
+                     <a href="https://actodo-app-ochre.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <img src={P1} className='w-64 border rounded-md cursor-pointer' alt="BulkMail Project" />
+                    </a>
 
                     <img src={P2} className='w-64 border rounded-md cursor-pointer' alt="" />
 
@@ -94,7 +97,7 @@ function Home() {
                     <h2 className='text-4xl md:text-7xl font-bold text-orange-400 py-2'>Blogs about tech</h2>
 
                     <p className='py-2'>You can know better about me by reading my blogs here. I share my expertise here.</p>
-                    <button className='button-style mt-2' onClick={() => navigate("/blogs")}>Read My Blogs</button>
+                    <button className='button-style mt-2 gap-2' onClick={() => navigate("/blogs")}>Read My Blogs</button>
                 </div>
 
 

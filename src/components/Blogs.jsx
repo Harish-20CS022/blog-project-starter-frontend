@@ -1,14 +1,29 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from "axios"
 import Footer from './common/Footer';
+import auth from '../config/firebase'
+
 function Blogs() {
 
     const [blogs, setBlogs] = useState([]);
+    const [admin, setAdmin] = useState([false]);
 
     useEffect(() => {
         window.scrollTo(0, 0);
+
+        auth.onAuthStateChanged(function(user){
+        if(user){
+            if(user.uid === "Lnh79UMQZ0PaQvSOMaRnrn4zuv83"){
+                setAdmin(true)
+            }else{
+                setAdmin(false)
+            }
+        }else{
+          console.log("User Logged out")
+        }
+      })
+
         axios.get("http://localhost:5000/api/blogs").then((res) => {
             console.log(res.data)
             setBlogs(res.data)
@@ -71,6 +86,7 @@ function Blogs() {
             <h2 className="text-center text-5xl font-bold mb-14">Latest  <span className='text-orange-400'>Blogs</span> 📚</h2>
 
             {/* Blog creation form */}
+            {admin?
             <div className="blog-creation-form mb-8" style={{ width: "80%", margin: "auto" }}>
                 <form onSubmit={handleNewBlogSubmit} className="flex flex-col gap-4">
                     <input
@@ -93,9 +109,9 @@ function Blogs() {
                         Add Blog
                     </button>
                 </form>
-            </div>
+            </div>:""}
 
-            <div className="blogs-container grid grid-cols-1 md:grid-cols-2 gap-6 container mx-auto px-4">
+            <div className="blogs-container grid grid-cols-1 md:grid-cols-2 gap-6 container mx-auto px-4 mb-6">
                 {blogs.map((blog) => (
                     <div key={blog._id} className="blog-post mb-8 p-6 bg-white shadow-lg rounded-lg">
                         <h3 className="blog-title font-semibold text-2xl text-gray-800 mb-3">{blog.newTitle}</h3>
