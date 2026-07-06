@@ -92,7 +92,7 @@ function Home() {
 
                     <p className='py-2'>You can know better about me by reading my blogs here. I share my expertise here.</p>
                     <button className='button-style mt-2' onClick={() => navigate("/blogs")}>Read My Blogs</button>
-                    <button className='button-style mt-2' onClick={() => navigate("/about")}>About Me</button>
+                    <button className='button-style mt-2 ml-2' onClick={() => navigate("/about")}>About Me</button>
                     <button className='button-style mt-2 ml-2' onClick={() => navigate("/contact")}>Contact Me</button>
                 </div>
 
