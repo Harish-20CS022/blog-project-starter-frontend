@@ -70,7 +70,7 @@ function Home() {
                 <div className='flex justify-around my-5 flex-col sm:flex-row'>
 
                     <a href="https://actodo-app-ochre.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        <img src={P1} className='w-64 border rounded-md cursor-pointer' alt="BulkMail" />
+                        <img src={P1} className='w-64 border rounded-md cursor-pointer' alt="Actodo" />
                     </a>
 
                     <a href="https://weather-app-kohl-tau.vercel.app/" target="_blank" rel="noopener noreferrer">
