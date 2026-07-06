@@ -69,7 +69,7 @@ function Home() {
                 <h2 className='text-center text-5xl my-14 font-bold'>Checkout My Live <span className='text-orange-400'>Projects</span> Here</h2>
                 <div className='flex justify-around my-5 flex-col sm:flex-row'>
 
-                    <a href="https://vercel.com/hariharan-a-projects/actodo-app" target="_blank" rel="noopener noreferrer">
+                    <a href="https://actodo-app-ochre.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <img src={P1} className='w-64 border rounded-md cursor-pointer' alt="BulkMail" />
                     </a>
 
