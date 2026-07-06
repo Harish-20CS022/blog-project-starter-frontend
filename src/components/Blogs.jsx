@@ -8,7 +8,7 @@ const API_URL = "https://blog-project-starter-backend.onrender.com/api/blogs";
 function Blogs() {
 
     const [blogs, setBlogs] = useState([]);
-    const [admin, setAdmin] = useState([false]);
+    const [admin, setAdmin] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0);
