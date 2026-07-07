@@ -7,7 +7,7 @@ import JS from "../assets/js.png"
 import REACTICON from "../assets/physics.png"
 import NODE from "../assets/node-js.png"
 import P1 from "../assets/p1.jpg"
-import P3 from "../assets/p3.png"
+import P2 from "../assets/p2.png"
 import BlogImage from "../assets/blogImage.png"
 import { useNavigate } from 'react-router-dom';
 import Footer from './common/Footer'
@@ -74,7 +74,7 @@ function Home() {
                     </a>
 
                     <a href="https://weather-app-kohl-tau.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        <img src={P3} className='w-64 border rounded-md cursor-pointer' alt="Weather App" />
+                        <img src={P2} className='w-64 border rounded-md cursor-pointer' alt="Weather App" />
                     </a>
 
                 </div>
