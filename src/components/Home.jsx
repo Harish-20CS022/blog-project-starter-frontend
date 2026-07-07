@@ -7,7 +7,7 @@ import JS from "../assets/js.png"
 import REACTICON from "../assets/physics.png"
 import NODE from "../assets/node-js.png"
 import P1 from "../assets/p1.jpg"
-import P3 from "../assets/p3.jpg"
+import P3 from "../assets/p3.png"
 import BlogImage from "../assets/blogImage.png"
 import { useNavigate } from 'react-router-dom';
 import Footer from './common/Footer'
