@@ -74,7 +74,11 @@ function Home() {
                     </a>
 
                     <a href="https://weather-app-kohl-tau.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        <img src={P2} className='w-64 border rounded-md cursor-pointer' alt="Weather App" />
+                        <img src={P3} className='w-64 border rounded-md cursor-pointer' alt="Weather App" />
+                    </a>
+
+                    <a href="https://bulkmail-frontend-4axys00hw-hariharan-a-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <img src={P4} className='w-64 border rounded-md cursor-pointer' alt="Bulk Mail" />
                     </a>
 
                 </div>
